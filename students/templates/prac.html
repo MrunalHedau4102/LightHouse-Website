@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"rel="stylesheet">
+    <title>Home | Light House</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{ 
+            background-color: #f6f6f8;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+        }
+        div.bg{
+            background-image: linear-gradient(45deg,#f8d4d4,#f3ea94,#f3e672,#31b9d4,#3a638d,#31536e);
+            background-size: 400%;
+            background-attachment: fixed;
+            animation: bganimation 9s infinite;
+        }
+        @keyframes bganimation {
+            0%{
+                background-position:0% 50% ;
+            }
+            60%{
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        *{
+        
+            margin: 0;
+            padding: 0;
+            
+            
+            }
+            
+         
+            nav{
+              
+                display: flex;
+                background-image: linear-gradient(45deg , rgb(213, 242, 255) ,rgb(247, 255, 223),rgb(213, 242, 255));
+                border-bottom: 1px solid black;
+                /* padding: 0.02% 2%; */
+                padding: 2.5% 2%;
+               
+                font-family: 'Poppins', sans-serif;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+         
+            
+            
+            .nav-links{
+            
+                flex: 1;
+                padding: 0%;
+                font-family: 'Poppins', sans-serif;
+                text-align: right;
+            }
+            .nav-links ul li {
+                list-style: none;
+                font-family: 'Poppins', sans-serif;
+                display: inline-block;
+                padding: 4px 19px;
+                position: relative;
+            }
+            .nav-links ul li a{
+                color: rgb(41, 41, 41);
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                /* padding: 5px 5px; */
+                /* margin: 0px 0px; */
+            }
+            /* .bg{
+                background-image:linear-gradient(45deg,#0376c2,#236692) ;
+            }
+             */
+            .nav-links ul li::after{
+                content: '';
+                width: 0%;
+                font-family: 'Poppins', sans-serif;
+                height: 2px;
+                /* background: rgb(0, 153, 255); */
+                background: #4776f8;
+                text-shadow: 2px 2px black;
+                display: block;
+                margin: auto;
+                transition: 0.5s;
+            }
+            .nav-links ul li:hover::after{
+                width: 100%;
+                text-shadow: 2px 2px black;
+            }
+           .logo{
+               margin-bottom: 2%;
+           }
+            .textbox {
+                width: 50%;
+                color: rgb(5, 5, 5);
+                position: absolute;
+                
+                /* margin-top: 8%; */
+                font-family: 'Poppins', sans-serif;
+                left: 75%;
+                transform: translate(-50%,-110%);
+                text-align: center;
+            
+            }
+            .textbox h1 {
+                /* margin-top: 1%; */
+                font-family: 'Poppins', sans-serif;
+                font-size: 5vw;
+            }
+            .textbox p{
+                margin: 7px 0 4%;
+                color: rgb(5, 5, 5);
+                font-family: 'Poppins', sans-serif;
+                font-size: 3vw;
+            }
+            
+            .btn1 {
+            
+            display: inline-block;
+            /* border-radius: 12px; */
+            text-decoration: none;
+            font-size: 2vw;
+            color: rgb(82, 82, 82);
+            /* color: #ffffff; */
+            /* border: solid .2px black; */
+            border: 1px solid rgb(0, 0, 0);
+            padding: 1vw;
+            font-size:2vw;
+            background: transparent;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            cursor: pointer;
+            transition: 0.6s;
+            }
+            svg{
+                margin: 0;
+                padding: 0;
+            }
+            .btn1:hover {
+                border: 1px solid #000000;
+                background: #8dd7ee;
+                transition: 0.6s;
+                font-family: 'Poppins', sans-serif;
+                color: rgb(29, 29, 29);
+            }
+        
+            /* #roof{
+                animation: roof 1.5s infinite ease;
+                transform-origin: center ;
+                transform-box: fill-box;
+                /* height: 20%; */
+            
+        .chat{
+            float: left;
+            margin-left: 3%;
+            margin-top: 12%;
+        }
+            #logo1{
+                animation: logo1 1.5s infinite ;
+                transform-origin: center ;
+                transform-box: fill-box;
+            }
+        
+        
+        #chat{
+            animation: chat 2.2s infinite ;
+            transform-origin: center ;
+            transform-box: fill-box;
+        }
+        .chat2{
+            float: right;
+            margin-right: 3%;
+            margin-top: 12%;
+        }
+        #chat2{
+            animation: chat2 2.2s infinite ;
+            transform-origin: center ;
+            transform-box: fill-box;
+        }
+        @keyframes chat2 {
+        
+                
+            0% {
+                transform : translateY(10%)
+            }
+            50% { 
+                transform :  translateY(-10%)
+        }
+            100%{
+                transform :  translateY(10%)
+            }
+        }
+            @keyframes chat {
+        
+                
+                0% {
+                    transform : translateY(10%)
+                }
+                50% { 
+                    transform :  translateY(-10%)
+            }
+                100%{
+                    transform :  translateY(10%)
+                }
+        }
+        
+            @keyframes roof {
+        
+                
+                0% {
+                    transform : translateY(5%)
+                }
+                50% { 
+                    transform :  translateY(-.4%)
+            }
+                100%{
+                    transform :  translateY(5%)
+                }
+        }
+        @keyframes logo1 {
+        
+                
+            0% {
+                transform : translateY(5%)
+            }
+            50% { 
+                transform :  translateY(-.4%)
+        }
+            100%{
+                transform :  translateY(5%)
+            }
+        }
+        @keyframes updown {
+        
+                
+            0% {
+                transform : translateY(7%)
+            }
+            50% { 
+                transform :  translateY(-.4%)
+        }
+            100%{
+                transform :  translateY(7%)
+            }
+        }
+        
+        
+        .know{
+            background-color: rgb(243, 243, 243);
+            border: solid rgb(14, 132, 211) 0.2vw;
+            margin-top: 5.5%;
+            margin-bottom: 2%;
+            margin-left: 17%;
+            text-align: center;
+            margin-right: 17%;
+            align-items: center;
+            border-radius: 15px;
+        }
+        
+        .know h1{
+            text-align: center;
+            /* margin-top: 1em; */
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5vw;
+            padding-right: 5px;
+            padding-right: 5px;
+            color: #2c2c2c;
+            padding: 1% ;
+        }
+        .know h3{
+            text-align: center;
+            font-size: 2vw;
+            color: #535353;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 2% ;
+        }
+        .know a{
+            /* display: inline-block; */
+            text-decoration: none;
+            color: rgba(82, 82, 82, 0.596);
+            border: 1px solid rgb(0, 0, 0);
+            padding: 1vw;
+            margin-bottom: 2%;
+            font-size: 2.5vw;
+            position: relative;
+            display: inline-block;
+            background: transparent;
+            font-family: 'Poppins', sans-serif;
+            /* position: relative; */
+            cursor: pointer;
+            transition: 0.6s;
+        }
+        
+        .know a:hover {
+            border: 1px solid #000000;
+            background: #a5e7e2;
+            transition: 0.6s;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(29, 29, 29);
+        }
+        
+        .sec1{
+        
+            position: relative;
+            align-self: center;
+            left: 25%;
+            
+        }
+        
+        .know2 h1{
+            margin-left: 4%;
+            font-family: 'Poppins', sans-serif;
+            /* margin-top: 1%; */
+            font-size: 2.5vw;
+            margin-top: 4%;
+            margin-bottom: 2%;
+        }
+        .know2 h3{
+            text-align: left;
+            font-size: 2vw;
+            margin-bottom: 3%;
+            color: #535353;
+            margin-left: 5%;
+            margin-right: 55%;
+            margin-bottom: 2% ;
+        }
+        .know2{
+            /* background-color: rgb(243, 243, 243); */
+            border-left: solid rgb(14, 132, 211) 0.2vw;
+            /* position: relative; */
+            margin-top: 8%;
+            margin-bottom: 5%;
+            float: left;
+            margin-left: 5%;
+            position: absolute;
+            text-align: left;
+            margin-right: 5%;
+            /* align-items: center; */
+            /* border-radius: 15px; */
+        }
+        .photoblog{
+            /* float: right; */
+            margin-top: 15%;
+            margin-left: 70%;
+            border-radius: 15px;
+        }
+        
+        .know3 h1{
+            margin-right: 33%;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 1%;
+            display: inline-block;
+            font-size: 2.5vw;
+            margin-top: 4%;
+            margin-bottom: 2%;
+        }
+        .know3 h3{
+            text-align: left;
+            margin-bottom: 3%;
+            font-size: 2vw;
+            /* display: inline-block; */
+            color: #535353;
+            margin-left: 32%;
+            /* position: relative; */
+            display: inline-block;
+            margin-right: 5%;
+            margin-bottom: 2% ;
+        }
+        .know3{
+            /* background-color: rgb(243, 243, 243); */
+            border-right: solid rgb(14, 132, 211) 0.2vw;
+            display: inline;
+            /* position: relative; */
+            /* margin-top: 8%; */
+            /* margin-left: 70%; */
+            /* border-radius: 15px; */
+            margin-top: 15%;
+            margin-bottom: 5%;
+            /* display: inline-block; */
+            margin-right: 5%;
+            position: absolute;
+            text-align: right;
+            margin-left: 2%;
+            align-items: center;
+            /* border-radius: 15px; */
+        }
+        .img1{
+            margin-top: 21%;
+            vertical-align: middle;
+            /* margin-bottom: 5%; */
+            margin-left: 5%;
+            /* position: absolute; */
+            text-align: left;
+            /* margin-right: 5%; */
+            /* align-items: center; */
+            border-radius: 15px;
+        }
+        
+        /* header.sticky{
+            /* padding: 5px 100px; 
+            background-image: linear-gradient(50deg , rgb(204, 229, 238) , rgb(255, 255, 255));
+        } */
+        
+        #img1{
+            animation: updown 2s infinite ease ;
+            transform-origin: center ;
+            transform-box: fill-box;
+        }
+        
+        #img2{
+            animation: updown 2s infinite ease ;
+            transform-origin: center ;
+            transform-box: fill-box;
+        }
+        
+        .supercontainer {
+        /* height: 20vh; */
+        position: relative;
+        height: 60vh;
+        background: linear-gradient(135deg , #6f6df4 ,#4c46f5);
+        font-family: 'Poppins', sans-serif;
+        } 
+        
+         .container{
+            background: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            width: 85%;
+            min-width: 420px;
+            margin-top: 4%;
+            padding: 25px 50px;
+          
+            position: absolute;
+            display: block;
+                /* top: 50%; */
+                left: 50%;
+                transform: translate(-50%,-12%);
+                background: #131111; 
+                box-shadow: black 10px, 10px;
+                 background-image: linear-gradient(40deg , #3082fc ,rgb(212, 211, 211));
+                 /* text-align: center; */
+            box-shadow: 20px 30px 25px rgba(0,   0, 0, 0.15);
+            
+        }
+        
+        .sec2{
+            align-self: center;
+            left: 25%;
+            position: relative;
+        }
+        
+        .container h1{
+            font-size: 3vw;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #1c093c;
+        }
+        .container p{
+            position: absolute;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: #606060;
+            font-size: 2vw;
+            /* font-weight: 400; */
+        }
+        form{
+            width: 100%;
+            /* position: absolute; */
+            margin: 30px auto 0 auto;
+            font-size: 2vw;
+            font-family: 'Poppins', sans-serif;
+        }
+        .row{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit ,minmax(400px ,1fr));
+            grid-gap: 2vw 3vw;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        label{
+            color: #1c093c;
+            font-size: 3vw;
+        }
+        
+        input{
+            width: 50%;
+            font-weight: 400;
+            padding:8px 10px ;
+            border-radius: 5px;
+            border: 1.2px solid #c4cae0;
+            margin-top: 5px ;
+        }
+        button{
+            text-decoration: none;
+            font-size: 2vw;
+            color: rgb(82, 82, 82);
+            /* color: #ffffff; */
+            /* border: solid .2px black; */
+            border: 1px solid rgb(0, 0, 0);
+            padding: 1vw;
+            font-size:2vw;
+            background: transparent;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            cursor: pointer;
+            transition: 0.6s;
+        }
+        
+        button:hover{
+            border: 1px solid #000000;
+            background: #8dd7ee;
+            transition: 0.6s;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(29, 29, 29);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .college {
+            color: #ffffff;
+            padding-left: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .containerfooter{
+            max-width: 1170px;
+            /* background-color:darkslategray; */
+            font-family: 'Poppins', sans-serif;
+            margin: auto;
+        }
+        .rowfooter{
+            display: flex;
+            /* background-color: darkslategray; */
+            font-family: 'Poppins', sans-serif;
+            flex-wrap: wrap;
+        }
+        
+        ul{
+            list-style: none;
+        
+        }
+        .footer{
+            background-image: linear-gradient(135deg ,rgb(44, 44, 44) ,rgb(61, 61, 61));
+            font-family: 'Poppins', sans-serif;
+            padding: 70px 0;
+            border: solid .5px rgb(65, 65, 65);
+        }
+        .footer-col{
+            width: 25%;
+            padding: 0 15px;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            font-family: 'Poppins', sans-serif;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li :not(:last-child){
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+        p{
+            color: #bbbbbb;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            font-family: 'Poppins', sans-serif;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            padding-left: 8px;
+        
+        }
+        .footer-col .social-links a{
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+        .footer-col .social-links a:hover{
+            color: #24262b;
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+        }
+        @media(max-width: 574px){
+            .footer-col{
+                width: 100%;
+                margin-bottom: 30px;
+        
+            }
+        }
+        
+        .copyright{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(180, 180, 180);
+            font-size: 20px;
+            margin-top: 3%;
+        }
+        
+            nav .fa{
+                display: none;
+            }
+        
+        @media(max-width:700px){
+         .textbox h1{
+                font-size: 20px;
+            }
+            .container{
+                margin-top: 20%;
+            }
+            .nav-links ul{
+                padding: 30px 20px;
+            }
+         .nav-links ul li{
+             display: block; 
+             /* color: white; */
+         }
+         .nav-links {
+            position: absolute;
+            background: #f44336;
+            height: 100vh;
+            padding: 15px 15px;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 1s;
+        }
+         .nav-links ul li a {
+             color: white;
+             /* padding: 20px; */
+             /* padding: 0px 15px; */
+         }
+        
+         nav .fa{
+            display: block;
+            color: white;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        
+        
+         }
+        
+        
+        
+    </style>
+</head>
+
+<body>
+  
+  <!-- <div class="textbox">
+    <h1>We are Light House</h1>
+    <p><strong>Hey Visitor</strong></p>
+    <a href="#" class="btn1"><strong>Know Us</strong></a>
+</div> -->
+
+
+
+
+<!-- <img class="logo" id="logo1" src="logo.png" style="width: 15rem; height: 15rem;" alt=""> -->
+
+</div>
+
+    <!-- <hr> -->
+<section class="header">
+  
+    <nav>
+
+        <h2>LIGHTHOUSE</h2>
+        <div class="nav-links" id="navLinks" >
+        <i class="fa fa-times" onclick="hideMenu()" ></i> 
+            <ul>
+                <li><a href="">HOME</a></li>
+              
+                <li><a href="/blog.html">BLOG</a></li>
+                <li><a href="">ABOUT Us</a></li>
+                <li><a href="">CONTACT</a></li>
+
+            </ul>
+
+        </div>
+        <i style="color: black;"  onclick="showMenu()" class="fa fa-bars" ></i>
+    </nav>
+  </section>
+    <!-- <div class="textbox">
+      <img class="logo" id="logo1" src="logo.png" style="width: 35%; height: 35%;" alt="">
+      <h1>We are LightHouse</h1>
+      <p><strong>Hey Visitor</strong></p>
+      <a href="#" class="btn1"><strong class="fts">Know Us</strong></a>
+  </div> -->
+  
+    <!-- <hr> -->
+   
+    <div class="bg">
+        
+
+    <svg width="52% "  height="50%" style="margin-top: 3em;" viewBox="0 0 956 662" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="undraw_Lighthouse_frb8 1" clip-path="url(#clip0)">
+        <g id="grass">
+        <path id="Vector" d="M582.087 381.931L592.336 414.478L602.585 447.025H582.087H561.589L571.838 414.478L582.087 381.931Z" fill="#3AD29F"/>
+        <path id="Vector_2" d="M602.268 377.522L612.507 410.069L622.756 442.625H602.268H581.771L592.02 410.069L602.268 377.522Z" fill="#3AD29F"/>
+        <path id="Vector_3" d="M622.44 377.522L632.689 410.069L642.938 442.625H622.44H601.942L612.191 410.069L622.44 377.522Z" fill="#3AD29F"/>
+        </g>
+        <path id="Vector_4" d="M773.857 367.871L784.106 400.418L794.354 432.974H773.857H753.359L763.608 400.418L773.857 367.871Z" fill="#3AD29F"/>
+        <g id="Vector_5" filter="url(#filter0_d)">
+        <path d="M0 661.878L38.7908 494.324L67.3735 459.689L95.9563 414.759L149.038 385.741L188.85 365.147L205.183 410.078L236.563 429.342L256.224 455.945L286.848 446.585L325.639 417.567L355.242 410.078L397.096 385.741L435.886 395.101L475.698 381.997L502.239 365.147L527.759 393.229L542.051 429.736L545.113 442.84H581.862H622.695L648.215 417.567L688.027 410.078H726.818L753.359 417.567L800.316 429.736L904.439 661.878H0Z" fill="#C7C7C7"/>
+        </g>
+        <g id="body" filter="url(#filter1_d)">
+        <path d="M433.845 629.968H236.828L248.356 135.729H422.307L433.845 629.968Z" fill="white"/>
+        </g>
+        <path id="Vector_6" d="M205.132 442.625H462.632C462.632 451.505 458.785 460.022 451.937 466.301C445.089 472.58 435.801 476.108 426.117 476.108H241.646C231.962 476.108 222.675 472.58 215.827 466.301C208.979 460.022 205.132 451.505 205.132 442.625Z" fill="#FC5151"/>
+        <path id="Vector_7" d="M204.162 284.562H461.662C461.662 293.442 457.815 301.959 450.967 308.238C444.119 314.517 434.832 318.045 425.147 318.045H240.677C230.992 318.045 221.705 314.517 214.857 308.238C208.009 301.959 204.162 293.442 204.162 284.562V284.562Z" fill="#FC5151"/>
+        <g id="Vector_8" filter="url(#filter2_i)">
+        <path d="M335.08 265.342C361.081 265.342 382.16 246.014 382.16 222.171C382.16 198.328 361.081 179 335.08 179C309.078 179 288 198.328 288 222.171C288 246.014 309.078 265.342 335.08 265.342Z" fill="#FDFD21"/>
+        </g>
+        <path id="door" d="M380.048 618.801H319.514V542.587C319.514 535.226 322.703 528.167 328.379 522.962C334.055 517.757 341.754 514.833 349.781 514.833V514.833C357.807 514.835 365.504 517.76 371.18 522.965C376.856 528.169 380.045 535.227 380.048 542.587V618.801Z" fill="#ACACAC"/>
+        <path id="roof" d="M464.429 99.4189C464.429 132.359 406.355 159.055 334.715 159.055C263.074 159.055 205 132.359 205 99.4189C205 66.479 263.074 0 334.715 0C406.355 0 464.429 66.4883 464.429 99.4189Z" fill="#FC5151"/>
+        <path id="Vector_9" d="M122.753 365.372L140.3 395.186L157.848 424.999L137.83 428.987L117.802 432.984L120.272 399.173L122.753 365.372Z" fill="#3AD29F"/>
+        <g id="water" style="mix-blend-mode:darken" filter="url(#filter3_d)">
+        <path d="M915.133 662H0C0 662 59.0829 539.896 148.64 518.29C161.55 515.11 175.03 514.252 188.309 515.764C209.91 518.234 229.449 528.422 243.328 543.512C272.683 575.427 362.583 644.971 542.454 565.5C542.454 565.5 606.844 507.599 710.26 576.024C716.667 578.889 723.241 581.44 729.954 583.667C761.683 594.451 825.15 609.477 870.271 577.776C932.702 533.912 915.133 662 915.133 662Z" fill="url(#paint0_linear)" style="mix-blend-mode:darken" shape-rendering="crispEdges"/>
+        </g>
+        </g>
+        <defs>
+        <filter id="filter0_d" x="-4" y="365.147" width="912.439" height="304.731" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+        <filter id="filter1_d" x="232.828" y="135.729" width="205.017" height="502.239" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+        <filter id="filter2_i" x="288" y="179" width="94.1596" height="90.3421" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+        </filter>
+        <filter id="filter3_d" x="-4" y="515.039" width="925.411" height="154.961" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear" x1="380.971" y1="540.157" x2="377.198" y2="630.141" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#4587F7"/>
+        <stop offset="0.9999" stop-color="#3461AD"/>
+        <stop offset="1" stop-color="#3160AE"/>
+        </linearGradient>
+        <clipPath id="clip0">
+        <rect width="956" height="662" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>
+        
+
+     </div>
+      <div class="textbox">
+      <img class="logo" id="logo1" src="logo.png" style="width: 35%; height: 35%;" alt=" ">
+      <h1>We are LightHouse</h1>
+      <p><strong>Hey Visitor</strong></p>
+      <a href="#" class="btn1"><strong class="fts">Know Us</strong></a>
+  </div>
+
+        
+            <img class="chat" id="chat" src="chat.png" height="10%" width="10%" alt="">
+            <img src="chat (1).png" class="chat2" height="10%" width="10%" id="chat2" alt="">
+
+            <div class="know">
+               
+
+            <h1> &#9733 What makes Us the Light House Club &#9733 </h1>
+
+
+           
+
+
+
+           <h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, sint nobis ipsum culpa in iste pariatur recusandae amet voluptatem at illo cupiditate eveniet eum molestiae enim soluta nihil dolorum? Cuos et necessitatibus enim, quod adipisci laborum fuga? Eveniet quia facilis ducimus assumenda voluptatibus itaque laudantium non placeat dignissimos culpa! Porro molestias ducimus, reiciendis nostrum odio consequatur vero non sunt vel. Fugit temporibus dicta voluptatibus, blanditiis aperiam accusantium! Eaque libero perferendis sequi iure.</h3>
+
+           <a href="#" ><strong>Keep Reading</strong></a>
+
+        </div>
+        <hr class="sec1" width="50%">
+
+
+        
+        
+            
+            <div class="know2" style="float: left;">
+                <h1 style="float: left;">&#8226 Light House Blog</h1>
+                
+                
+                <h3 style="float: left;">The post in our blog are ... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos fuga doloribus maiores nostrum doloremque autem ad nobis quas, consequatur iure pariatur molestias impedit optio aperiam iusto est magni unde. Doloremque dicta aut repellendus corporis sunt, aliquam alias fugiat non a nisi suscipit libero. Impedit sunt inventore vero ad quasi.</h3>
+                
+                
+                
+                <!-- <img class="photoblog" src="blogs.jpg" width="5%" height="5%" alt=""> -->
+            </div>
+            <img class="photoblog" id="img2" src="blogs.jpg" width="28%" height="28%" alt="">    
+            
+          
+            
+          <img class="img1" id="img1" src="doge.jpg" width="30%" height="30%" alt="">   
+          <div class="know3"><h1>&#8226 Why Our Blogs</h1>
+            <h3>The post in our blog are ... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos fuga doloribus maiores nostrum doloremque autem ad nobis quas, consequatur iure pariatur molestias impedit optio aperiam iusto est magni unde. Doloremque dicta aut repellendus corporis sunt, aliquam alias fugiat non a nisi suscipit libero. Impedit sunt inventore vero ad quasi.</h3></div>
+           
+            
+            
+            
+            
+          
+          
+          
+          
+        
+            <hr  class="sec2" style="margin-top: 8%; display: block; margin-bottom: 1%;" width="50%">
+      
+            <div class="supercontainer">
+              <div class="container">
+                <h1>Subscribe to Lighthouse  Now !</h1>
+                <!-- <p>quality content only</p> -->
+                <form action="#">
+                  <div class="row">
+                    <div class="column">
+                      <label for="Firstname">First Name</label>
+                      <input type="text" id="name" placeholder="Your First Name">
+                    </div>
+                    <div class="column">
+                      <label for="Lastname">Last Name</label>
+                      <input type="Text" id="name" placeholder="Your Last Name ">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="column">
+                      <label  style="margin-left: 0%; " for="Email">Email</label>
+                      <input style="margin-left: 30px; " type="email" id="Email" name="#" placeholder="Your Email" >
+                    </div>
+                  </div>
+                  <button><strong>Submit</strong></button>
+                </form>
+              </div>
+          </div>           
+  <footer class="footer">
+    <div class="containerfooter">
+      <div class="rowfooter">
+        <div class="footer-col">
+          <h4>Institute</h4>
+          <ul>
+            <li> <h3 class="college">VIIT,</h3></li>
+             <li> <p href="college">Survey No. 2/3/4, VIM Private Rd, Kapil Nagar, Kondhwa, Pune, Maharashtra 411048
+             </p></li>
+            <!-- <li> <a href="#">privacy policy</a></li>
+            <li> <a href="#">affiliate program</a></li>  -->
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li> <a href="#">About Us</a></li>
+            <li> <a href="#">Technical Team</a></li>
+            <li> <a href="#">Writers</a></li>
+            <li> <a href="#">Editors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Mail Us at</h4>
+           <ul>
+            <li> <a href="#">Lighthouse@viit.ac.in</a></li>
+           
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <!-- <a href="#"><i class><i class="fab fa-facebook"></i></a> -->
+            <a href="#"><i class><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/lighthouseviit/"><i class><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class><i class="fab fa-linkedin"></i></a>
+
+            
+          </div>
+                   
+        </div>
+      
+      </div>
+      
+            </div>
+            <div class="copyright">
+              <h4>&#9400 2021 VIIT </h4>
+            </div>
+            <!-- <p class="copyright">all rights reserved</p> -->
+  </footer>          
+  
+         
+            
+    <!-- ---------------------JS------------------------------ -->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+  navLinks.style.right = "0";
+}
+function hideMenu(){
+  navLinks.style.right = "-200px";
+}
+</script>
+
+           
+        </body>
+        </html>
